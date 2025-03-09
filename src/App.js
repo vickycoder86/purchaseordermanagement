@@ -1,24 +1,34 @@
-import logo from './logo.svg';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Login from './Auth/Login';
+import Home from './Home';
+import Suppliers from './Suppliers';
+import AddSuppliers from './AddSuppliers';
+import ItemsManagment from './ItemsManagment';
+import AddItems from './AddItems';
+import ViewPurchaseOrder from './ViewPurchaseOrder';
+import AddPurchaseOrder from './AddPurchaseOrder';
+import SinglePurchaseOrder from './SinglePurchaseOrder';
+import OrderArrivals from './OrderArrivals';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Login />} />
+          <Route path='/Home' element={<Home />} />
+          <Route path='/Suppliers' element={<Suppliers />} />
+          <Route path='/AddSuppliers' element={<AddSuppliers />} />
+          <Route path='/ItemsManagment' element={<ItemsManagment />} />
+          <Route path='/AddItems' element={<AddItems />} />
+          <Route path='/ViewPurchaseOrder' element={<ViewPurchaseOrder />} />
+          <Route path='/AddPurchaseOrder' element={<AddPurchaseOrder />} />
+          <Route path='/SinglePurchaseOrder/:orderNo' element={<SinglePurchaseOrder />} />
+          <Route path='/OrderArrivals' element={<OrderArrivals />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

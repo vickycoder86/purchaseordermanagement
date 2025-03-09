@@ -1,0 +1,120 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Container */
+.order-container {
+  max-width: 600px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+
+/* Header */
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h2 span {
+  font-size: 0.9em;
+  color: gray;
+}
+
+/* Order Info */
+.order-info {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.order-info p {
+  margin: 5px 0;
+}
+
+.status-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.status-btn:hover {
+  background: #0056b3;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+thead {
+  background: #007bff;
+  color: white;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+/* Buttons */
+.buttons {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.update-btn, .cancel-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.update-btn {
+  background: #28a745;
+  color: white;
+}
+
+.update-btn:hover {
+  background: #218838;
+}
+
+.cancel-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background: #c82333;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .order-container {
+      width: 90%;
+  }
+
+  table {
+      font-size: 14px;
+  }
+
+  .buttons button {
+      width: 100%;
+      margin-top: 5px;
+  }
+}
